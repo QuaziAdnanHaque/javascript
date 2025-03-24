@@ -18,7 +18,7 @@ const anotherId = Symbol('123')
 const bigNumber = 423423423423424242423424n 
 
 
-// Refence (Non Premitive)
+// Refence (Non Primitive)
 
 // Array, Objects, Functions
 
@@ -34,4 +34,27 @@ const myFunction = function(){
 }
 
 // console.log(typeof bigNumber);
-console.log(typeof heros);
+// console.log(typeof heros);
+
+// ++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive) - Provides copy
+//  Heap (Non Primitive) - Provides refernce
+
+let myName = "QUAZI ADNAN HAQUE"
+
+let anotherName = myName
+
+// console.log(anotherName);
+
+let user = {
+    email: "user@google.com",
+    upi: "user@ybl",
+}
+
+let userTwo = user
+
+userTwo.email = "adnan@googl.com"
+
+console.log(userTwo.email);
+console.log(user.email);
